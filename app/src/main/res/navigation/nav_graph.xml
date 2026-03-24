@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.navalcombat.ui.WelcomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcome_to_setup"
+            app:destination="@id/setupFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.navalcombat.ui.SetupFragment"
+        android:label="@string/setup_title"
+        tools:layout="@layout/fragment_setup">
+
+        <action
+            android:id="@+id/action_setup_to_turnTransition"
+            app:destination="@id/turnTransitionFragment" />
+
+        <action
+            android:id="@+id/action_setup_to_game"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/setupFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.navalcombat.ui.GameFragment"
+        android:label="@string/game_title"
+        tools:layout="@layout/fragment_game">
+
+        <action
+            android:id="@+id/action_game_to_turnTransition"
+            app:destination="@id/turnTransitionFragment" />
+
+        <action
+            android:id="@+id/action_game_to_gameOver"
+            app:destination="@id/gameOverFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/turnTransitionFragment"
+        android:name="com.navalcombat.ui.TurnTransitionFragment"
+        android:label="@string/turn_transition_title"
+        tools:layout="@layout/fragment_turn_transition">
+
+        <action
+            android:id="@+id/action_turnTransition_to_game"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/turnTransitionFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_turnTransition_to_setup"
+            app:destination="@id/setupFragment"
+            app:popUpTo="@id/turnTransitionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.navalcombat.ui.GameOverFragment"
+        android:label="@string/game_over"
+        tools:layout="@layout/fragment_game_over">
+
+        <action
+            android:id="@+id/action_gameOver_to_welcome"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

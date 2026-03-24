@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Naval Combat</string>
+    <string name="welcome_subtitle">Two-player battleship game</string>
+    <string name="player1_name_hint">Player 1 name</string>
+    <string name="player2_name_hint">Player 2 name</string>
+    <string name="default_player_1">Player 1</string>
+    <string name="default_player_2">Player 2</string>
+    <string name="start_game">Start Game</string>
+    <string name="switch_language">Switch Language</string>
+    <string name="welcome_help">Enter player names to start the game. Both players must have unique names. Press "Start Game" to begin. Players will take turns placing their ships and firing shots.</string>
+
+    <!-- Setup -->
+    <string name="setup_title">Ship Placement</string>
+    <string name="setup_ships_remaining_title">Ships to place</string>
+    <string name="setup_ship_selector_item">%1$d-deck x%2$d</string>
+    <string name="setup_player_title">%1$s\'s Placement</string>
+    <string name="setup_selected_ship">Selected: %1$d-deck (%2$d left)</string>
+    <string name="setup_selected_ship_none">All ships placed.</string>
+    <string name="setup_orientation_button">Orientation: %1$s</string>
+    <string name="select_starting_player_title">Who starts first?</string>
+    <string name="select_starting_player_message">Choose the player who will make the first move.</string>
+    <string name="setup_select_ship_prompt">Select a ship size first.</string>
+    <string name="setup_undo_unavailable">Nothing to undo.</string>
+    <string name="setup_remove_error">There is no ship in this cell.</string>
+    <string name="all_ships_placed">All ships placed!</string>
+    <string name="undo">Undo</string>
+    <string name="reset">Reset</string>
+    <string name="setup_help">Select a ship size, choose orientation, tap the board to place it, and long-press a ship on the board to remove it. Use Undo to cancel the last placement.</string>
+    <string name="ship_placement_error">Cannot place ship here. Ships must not overlap or touch each other (including diagonally).</string>
+    <string name="orientation_horizontal">Horizontal</string>
+    <string name="orientation_vertical">Vertical</string>
+
+    <!-- Game -->
+    <string name="game_title">Battle</string>
+    <string name="turn_info">%s\'s turn</string>
+    <string name="opponent_board">Opponent\'s board — tap to fire</string>
+    <string name="own_board">Your board</string>
+    <string name="shot_hit">Hit!</string>
+    <string name="shot_miss">Miss!</string>
+    <string name="shot_sunk">Ship sunk!</string>
+    <string name="shot_already">You already fired here!</string>
+
+    <!-- Turn transition -->
+    <string name="turn_transition_title">Pass the device</string>
+    <string name="turn_transition_message">Pass the device to %s</string>
+    <string name="turn_transition_hint">Make sure the other player is not looking at the screen</string>
+    <string name="continue_game">Continue</string>
+
+    <!-- Setup transition -->
+    <string name="setup_transition_message">Pass the device to %s for ship placement</string>
+
+    <!-- Game over -->
+    <string name="game_over">Game Over</string>
+    <string name="winner_message">%s wins!</string>
+    <string name="return_to_menu">Return to menu</string>
+
+    <!-- Validation -->
+    <string name="error_empty_names">Please enter both player names</string>
+    <string name="error_same_names">Player names must be different</string>
+</resources>

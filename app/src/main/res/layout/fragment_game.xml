@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/turnInfoText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_dark"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/shotResultText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/turnInfoText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/opponentBoardLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/opponent_board"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/shotResultText"
+                app:layout_constraintStart_toStartOf="@id/opponentBoardView"
+                app:layout_constraintEnd_toEndOf="@id/opponentBoardView"
+                android:layout_marginTop="4dp" />
+
+            <com.navalcombat.ui.BoardView
+                android:id="@+id/opponentBoardView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/opponentBoardLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.88"
+                app:layout_constraintDimensionRatio="1:1"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/ownBoardLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/own_board"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/opponentBoardView"
+                app:layout_constraintStart_toStartOf="@id/ownBoardView"
+                app:layout_constraintEnd_toEndOf="@id/ownBoardView"
+                android:layout_marginTop="8dp" />
+
+            <com.navalcombat.ui.BoardView
+                android:id="@+id/ownBoardView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/ownBoardLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.88"
+                app:layout_constraintDimensionRatio="1:1"
+                android:layout_marginTop="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

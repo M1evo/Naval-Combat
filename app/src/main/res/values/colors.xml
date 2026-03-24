@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные цвета приложения -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#42A5F5</color>
+    <color name="accent">#FF6F00</color>
+
+    <!-- Цвета фона -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Цвета текста -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Игровые цвета -->
+    <color name="water_color">#E3F2FD</color>
+    <color name="ship_color">#546E7A</color>
+    <color name="hit_color">#E53935</color>
+    <color name="miss_color">#90A4AE</color>
+    <color name="sunk_color">#B71C1C</color>
+    <color name="grid_color">#455A64</color>
+
+    <!-- Цвета Material -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="ic_launcher_background">#1565C0</color>
+</resources>

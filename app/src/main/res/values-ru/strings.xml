@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Морской бой</string>
+    <string name="welcome_subtitle">Игра для двух игроков</string>
+    <string name="player1_name_hint">Имя первого игрока</string>
+    <string name="player2_name_hint">Имя второго игрока</string>
+    <string name="default_player_1">Игрок 1</string>
+    <string name="default_player_2">Игрок 2</string>
+    <string name="start_game">Начать игру</string>
+    <string name="switch_language">Сменить язык</string>
+    <string name="welcome_help">Введите имена игроков, чтобы начать. Имена должны различаться.</string>
+
+    <!-- Расстановка -->
+    <string name="setup_title">Расстановка кораблей</string>
+    <string name="setup_ships_remaining_title">Корабли для установки</string>
+    <string name="setup_ship_selector_item">%1$d-палубный x%2$d</string>
+    <string name="setup_player_title">Расстановка: %1$s</string>
+    <string name="setup_selected_ship">Выбран: %1$d-палубный (%2$d осталось)</string>
+    <string name="setup_selected_ship_none">Все корабли расставлены.</string>
+    <string name="setup_orientation_button">Ориентация: %1$s</string>
+    <string name="select_starting_player_title">Кто начинает партию?</string>
+    <string name="select_starting_player_message">Выберите игрока, который сделает первый ход.</string>
+    <string name="setup_select_ship_prompt">Сначала выберите размер корабля.</string>
+    <string name="setup_undo_unavailable">Отменять нечего.</string>
+    <string name="setup_remove_error">В этой клетке нет корабля.</string>
+    <string name="all_ships_placed">Все корабли расставлены!</string>
+    <string name="undo">Отменить</string>
+    <string name="reset">Сбросить</string>
+    <string name="setup_help">Выберите размер корабля, укажите ориентацию, нажмите на поле для установки и удерживайте корабль на поле для удаления. Кнопка Отменить убирает последнюю установку.</string>
+    <string name="ship_placement_error">Невозможно разместить корабль. Корабли не должны пересекаться и соприкасаться друг с другом (включая углы).</string>
+    <string name="orientation_horizontal">Горизонтально</string>
+    <string name="orientation_vertical">Вертикально</string>
+
+    <!-- Игра -->
+    <string name="game_title">Сражение</string>
+    <string name="turn_info">Ход: %s</string>
+    <string name="opponent_board">Поле противника — нажмите для выстрела</string>
+    <string name="own_board">Ваше поле</string>
+    <string name="shot_hit">Попадание!</string>
+    <string name="shot_miss">Мимо!</string>
+    <string name="shot_sunk">Корабль потоплен!</string>
+    <string name="shot_already">Вы уже стреляли сюда!</string>
+
+    <!-- Смена хода -->
+    <string name="turn_transition_title">Передайте устройство</string>
+    <string name="turn_transition_message">Передайте устройство игроку %s</string>
+    <string name="turn_transition_hint">Убедитесь, что другой игрок не видит экран</string>
+    <string name="continue_game">Продолжить</string>
+
+    <!-- Переход расстановки -->
+    <string name="setup_transition_message">Передайте устройство игроку %s для расстановки кораблей</string>
+
+    <!-- Конец игры -->
+    <string name="game_over">Игра окончена</string>
+    <string name="winner_message">%s победил!</string>
+    <string name="return_to_menu">Вернуться в меню</string>
+
+    <!-- Валидация -->
+    <string name="error_empty_names">Введите имена обоих игроков</string>
+    <string name="error_same_names">Имена игроков должны быть разными</string>
+</resources>
